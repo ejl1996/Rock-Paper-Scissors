@@ -8,7 +8,6 @@
 
 <script> 
     
-let result = "Win" || "Lose" || "Draw" || "You Lose! Paper beats Rock"
 const choices1 = ['rock', 'paper', 'scissors'];
 const choices2 = ['ROCK', 'PAPER', 'SCISSORS']; 
 choices1.toLowerCase() === choices2.toLowerCase();
@@ -17,39 +16,46 @@ choices1.toLowerCase() === choices2.toLowerCase();
 const random = Math.floor(Math.random() * choices.length);
 
 function getComputerChoice() {
-    console.log(random, choices[random]);
+    console.log(random, choices1[random]);
 }
     
 function playRound(playerSelection, computerSelection) {
     if playerSelection = 'rock' && computerSelection = 'rock' {
-        result = "Draw"; 
-    if playerSelection = 'rock' && computerSelection = 'scissors' { 
-        result = "Win"; 
-    if playerSelection = 'rock' && computerSelection = 'paper' { 
-        result = "Lose"; 
-    if playerSelection = 'paper' && computerSelection = 'paper' {
-        result = "Draw"; 
-    if playerSelection = 'paper' && computerSelection = 'rock' { 
-        result = "You Lose! Paper beats Rock"; 
-    if playerSelection = 'paper' && computerSelection = 'scissors' { 
-        result = "Lose"; 
-    if playerSelection = 'scissors' && computerSelection = 'scissors' { 
-        result = "Draw"; 
-    if playerSelection = 'scissors' && computerSelection = 'rock' {
-        result = "Lose"; 
-    if playerSelection = 'scissors' && computerSelection = 'paper' { 
-        result = "Win"; 
+        return "Draw"; 
     }
-        
-const playerSelection = "rock";
+    if playerSelection = 'rock' && computerSelection = 'scissors' { 
+        return "Win"; 
+    }
+    if playerSelection = 'rock' && computerSelection = 'paper' { 
+        return "Lose"; 
+    }
+    if playerSelection = 'paper' && computerSelection = 'paper' {
+        return "Draw"; 
+    }
+    if playerSelection = 'paper' && computerSelection = 'rock' { 
+        return "You Lose! Paper beats Rock"; 
+    }
+    if playerSelection = 'paper' && computerSelection = 'scissors' { 
+        return "Lose"; 
+    }
+    if playerSelection = 'scissors' && computerSelection = 'scissors' { 
+        return "Draw"; 
+    }
+    if playerSelection = 'scissors' && computerSelection = 'rock' {
+        return "Lose"; 
+    }
+    if playerSelection = 'scissors' && computerSelection = 'paper' { 
+        return "Win"; 
+    }
+}        
+const playerSelection = "rock"
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
         
 function game() { 
-    return playRound;
+    playRound(playerSelection, computerSelection); 
 }
-for (let i = 0; i < 5; i++) {
-    console.log("Winner") 
+ 
 </script> 
 
 </body>
