@@ -8,7 +8,7 @@
 
 <script> 
     
-let result = "Win" || "Lose" || "Draw" 
+let result = "Win" || "Lose" || "Draw" || "You Lose! Paper beats Rock"
 const choices = ['Rock', 'Paper', 'Scissors'];
 
 const random = Math.floor(Math.random() * choices.length);
@@ -27,7 +27,7 @@ function secondChoice(playerSelection, computerSelection) {
     if playerSelection = 'Paper' && computerSelection = 'Paper' {
         result = "Draw"; 
     if playerSelection = 'Paper' && computerSelection = 'Rock' { 
-        result = "Win"; 
+        result = "You Lose! Paper beats Rock"; 
     if playerSelection = 'Paper' && computerSelection = 'Scissors' { 
         result = "Lose"; 
     if playerSelection = 'Scissors' && computerSelection = 'Scissors' { 
