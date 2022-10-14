@@ -9,7 +9,10 @@
 <script> 
     
 let result = "Win" || "Lose" || "Draw" || "You Lose! Paper beats Rock"
-const choices = ['Rock', 'Paper', 'Scissors'];
+const choices1 = ['rock', 'paper', 'scissors'];
+const choices2 = ['ROCK', 'PAPER', 'SCISSORS']; 
+choices1.toLowerCase() === choices2.toLowerCase();
+
 
 const random = Math.floor(Math.random() * choices.length);
 
