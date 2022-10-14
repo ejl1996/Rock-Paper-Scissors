@@ -7,6 +7,8 @@
 <p>My first paragraph.</p>
 
 <script> 
+    
+let result = "Win" || "Lose" || "Draw" 
 const choices = ['Rock', 'Paper', 'Scissors'];
 
 const random = Math.floor(Math.random() * choices.length);
@@ -14,6 +16,26 @@ const random = Math.floor(Math.random() * choices.length);
 function getComputerChoice() {
     console.log(random, choices[random]);
 }
+    
+function secondChoice(playerSelection, computerSelection) {
+    if playerSelection = 'Rock' && computerSelection = 'Rock' {
+        result = "Draw"; 
+    if playerSelection = 'Rock' && computerSelection = 'Scissors' { 
+        result = "Win"; 
+    if playerSelection = 'Rock' && computerSelection = 'Paper' { 
+        result = "Lose"; 
+    if playerSelection = 'Paper' && computerSelection = 'Paper' {
+        result = "Draw"; 
+    if playerSelection = 'Paper' && computerSelection = 'Rock' { 
+        result = "Win"; 
+    if playerSelection = 'Paper' && computerSelection = 'Scissors' { 
+        result = "Lose"; 
+    if playerSelection = 'Scissors' && computerSelection = 'Scissors' { 
+        result = "Draw"; 
+    if playerSelection = 'Scissors' && computerSelection = 'Rock' {
+        result = "Lose"; 
+    if playerSelection = 'Scissors' && computerSelection = 'Paper' { 
+        result = "Win"; 
 </script> 
 
 </body>
